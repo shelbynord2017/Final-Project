@@ -281,9 +281,9 @@ header {
 /*QUALITY*/
 
 #quality {
-    padding-top: 100px;
     margin: 0 auto;
     width: 100%;
+    margin-top: 50px;
 }
 
 .quality__row {
@@ -342,4 +342,78 @@ header {
     width: 100%;
     max-width: 550px;
 }
+
+/* STEPS */
+
+#steps {
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.steps__row {
+    display: flex;
+    gap: 6em;
+}
+
+.steps__img--wrapper {
+    width: 40%;
+}
+
+.steps__img {
+    width: 100%;
+    max-width: 500px;
+}
+
+.steps__description {
+    width: 55%;
+}
+
+.steps__title {
+    color: #6415ff;
+    padding-bottom: 20px;
+}
+
+.steps__sub-title {
+    font-size: 48px;
+    font-weight: 900;
+    letter-spacing: 0.025em;
+    line-height: 1.25;
+    margin-bottom: 30px;
+}
+
+.steps__list {
+    display: flex;
+}
+
+.step__content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 350px;
+}
+
+.step__number {
+    color: rgb(214, 202, 202);
+    font-size: 35px;
+    font-weight: 600;
+    padding-right: 15px;
+    padding-bottom: 20px;
+}
+
+.step__title {
+    color: rgb(47, 46, 46);
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 15px;
+    padding-top: 5px;
+}
+
+.step__description {
+    line-height: 2;
+    padding-bottom: 20px;
+    font-size: 14px;
+    color: rgb(137, 132, 132);
+}
+
 
