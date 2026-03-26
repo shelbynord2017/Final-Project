@@ -833,3 +833,45 @@ header {
 .user__img--wrapper {
     
 }
+
+.user__img {
+    height: 80px;
+    width: 80px;
+}
+
+.user__img-mask {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    padding-right: 50px;
+}
+
+.user__info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.user__name {
+    color: #4a5568;
+    line-height: 1.625;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.user__company {
+    color: #7c8ba1;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.testimony__buttons {
+    
+    padding-top: 50px;
+}
+
+.testimony__btn {
+    background-color: #a0aec0;
+}
