@@ -223,10 +223,12 @@ header {
     padding-top: 40px;
 }
 
+
+
 /*FEATURES*/
 
 #features {
-    padding-top: 100px;
+    padding-top: 200px;
     margin: 0 auto;
     width: 100%;
 }
@@ -300,6 +302,8 @@ header {
     font-weight: 500;
 }
 
+
+
 /*QUALITY*/
 
 #quality {
@@ -365,6 +369,8 @@ header {
     max-width: 550px;
 }
 
+
+
 /* STEPS */
 
 #steps {
@@ -389,7 +395,7 @@ header {
 }
 
 .steps__description {
-    width: 40%;
+    width: 50%;
 }
 
 .steps__title {
@@ -439,12 +445,14 @@ header {
     color: rgb(137, 132, 132);
 }
 
+
+
 /* VALUES */
 
 #values {
     margin: 
     width: 100%;
-    margin-top: 250px;
+    margin-top: 200px;
 }
 
 .values__row {
@@ -560,12 +568,14 @@ header {
     background-color: #4d0ccf;
 }
 
+
+
 /*PRICING*/
 
 #pricing {
     margin: 0 auto;
     width: 100%;
-    margin-top: 250px;
+    margin-top: 200px;
 }
 
 .pricing__row {
@@ -665,12 +675,14 @@ header {
 .plan__features {
     padding: 10px 20px;
     text-align: center;
+    width: 100%;
+    padding: 2rem; 
 }
 
 .plan__individuals--middle,
 .plan__enterprise--middle {
-  border-top: 1px solid rgba(187, 185, 185);
-  border-bottom: 1px solid rgb(187, 185, 185)
+    border-top: 1px solid rgba(187, 185, 185);
+    border-bottom: 1px solid rgb(187, 185, 185)
 }
 
 .plan__features--designation {
@@ -678,12 +690,6 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-}
-
-.plan__features {
-    margin: 0;
-    padding: 20px 0;
 }
 
 .plan__title {
@@ -705,17 +711,19 @@ header {
     letter-spacing: 0.1em;
 }
 
-.feature__title {
+.plan__feature--title {
     color: black;
     font-size: 20px;
     font-weight: bold;
     line-height: 2;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
 
-.feature {
+.plan__feature {
     color: rgb(136, 132, 132);
     font-size: 16px;
+    font-weight: 500;
+    width: 100%;
     line-height: 2.5;
 }
 
@@ -723,12 +731,11 @@ header {
     border-radius: 9999px;
     width: 160px;
     border: none;
-    padding: 12px 12px;
+    padding: 12px; 
     color: #fff;
     font-weight: 700;
     font-size: 16px;
     transition: all 300ms ease;
-    margin: 30px 0;
 }
 
 .plan__btn:hover {
@@ -1061,6 +1068,51 @@ footer {
     text-decoration: none;
 }
 
+
+
 /* TABLETS, SMALL PHONES */
 
-@media
+@media (max-width: 768px) {
+    .header__description{
+        padding: 0 24px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    button {
+        font-size: 18px;
+    }
+
+    .book {
+        width: 50%;
+    }
+
+}
+
+
+
+/* Small phones and large iPhones*/
+
+@media (max-width: 550px) {
+    .nav__links {
+        display: none;
+    } 
+
+    .btn__menu {
+        display: block;
+    }
+
+    .highlight {
+        width: 100%;
+    }
+
+    .highlight:not(:last-child) {
+        margin-bottom: 24px;
+    }
+}
