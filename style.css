@@ -98,8 +98,8 @@ li {
 
 
 .btn__menu {
-    background-color: none;
-    font-size: 40px;
+    background-color: white;
+    font-size: 26px;
     text-align: center;
     border: none;
     color: #7342d6;
@@ -140,7 +140,6 @@ li {
 }
 
 .menu__list {
-    padding: px 0;
     font-size: 40px;
 }
 
@@ -181,6 +180,7 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 26px;
 }
 
 .text--blue {
@@ -1160,29 +1160,114 @@ footer {
 /* TABLETS, SMALL PHONES */
 
 @media (max-width: 768px) {
-    .header__description{
+    .header__description {
         padding: 0 24px;
+        width: 100%;
     }
 
-    h1 {
-        font-size: 40px;
+    .header__container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     h2 {
-        font-size: 26px;
+        font-size: 32px;
     }
 
     button {
         font-size: 18px;
     }
 
-    .book {
-        width: 50%;
+    .feature {
+        width: calc(100% / 2);
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 2px;
     }
 
+    .quality__row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .steps__row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .values__row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .values__content {
+        margin: 5px 5px;
+    }
+
+    .values__btn {
+        margin: 8px;
+    }
+
+    .pricing__description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 740px;
+    }
+
+    .pricing__plan--list {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .plan__individuals,
+    .plan__business,
+    .plan__enterprise {
+        width: calc(100% / 2);
+    }
+
+    .testimonials__row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .testimony__btn {
+        display: none;
+    }
+
+    .get__started--box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .get__started--btn {
+        font-size: 18px;
+        margin: 8px;
+    }
+
+    .footer__bottom {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .footer__logo--title {
+        font-size: 14px;
+    }
 }
-
-
 
 /* Small phones and large iPhones*/
 
@@ -1195,11 +1280,17 @@ footer {
         display: block;
     }
 
-    .highlight {
-        width: 100%;
+    h1 {
+        font-size: 20px;
     }
 
-    .highlight:not(:last-child) {
-        margin-bottom: 24px;
+    .header__container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
     }
+
+    .footer__column {
+        margin: 0 8px;
+    }    
 }
