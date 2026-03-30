@@ -70,6 +70,7 @@ li {
     padding: 8px;
     margin: 0 24px;
     text-decoration: none;
+    position: relative;
     transition: all 300ms;
 }
 
@@ -201,7 +202,6 @@ a:hover {
 }
 
 header {
-    min-height: calc(100vh - 80px);
     
 }
 
@@ -315,7 +315,7 @@ header {
 /*FEATURES*/
 
 #features {
-    padding-top: 200px;
+    padding-top: 100px;
     margin: 0 auto;
     width: 100%;
 }
@@ -368,7 +368,7 @@ header {
 
 .feature__img {
     border: 2px solid rgba(128, 128, 128, 0.264);
-    padding: 20px 20px;
+    padding: 10px 10px;
     border-radius: 50%;
 }
 
@@ -711,9 +711,8 @@ header {
 
 .pricing__plans {
     display: flex;
-}
-
-.pricing__plans {
+    justify-content: center;
+    align-items: center;
     gap: 2em;
 }
 
@@ -750,7 +749,7 @@ header {
 .pricing__plan--list {
     display: flex;
     flex-direction: column;
-    width: calc(100% / 3);
+    width: calc(80% / 3);
     border: solid invisible;
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
@@ -780,12 +779,13 @@ header {
 }
 
 .plan__title {
+    font-size: 24px;
     font-weight: bold;
     line-height: 1.625;
 }
 
 .plan__price {
-    font-size: 48px;
+    font-size: 40px;
     font-weight: bold;
     margin: 4px 0;
     line-height: 1.625;
@@ -1181,11 +1181,27 @@ footer {
         font-size: 18px;
     }
 
+    .nav__link {
+        font-size: 10px;
+        margin: 0;
+    }
+
+    .nav__links {
+        display: flex
+        
+    }
+
     .feature {
         width: calc(100% / 2);
         display: flex;
         flex-wrap: wrap;
-        margin: 0 2px;
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+
+    .feature__row {
+        padding-left: 3px;
+        padding-right: 3px;
     }
 
     .quality__row {
@@ -1193,6 +1209,8 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding-left: 3px;
+        padding-right: 3px;
     }
 
     .steps__row {
@@ -1200,6 +1218,8 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding-left: 3px;
+        padding-right: 3px;
     }
 
     .values__row {
@@ -1207,6 +1227,8 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding-left: 3px;
+        padding-right: 3px;
     }
 
     .values__content {
@@ -1217,6 +1239,11 @@ footer {
         margin: 8px;
     }
 
+    .pricing__row {
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+
     .pricing__description {
         display: flex;
         flex-direction: column;
@@ -1224,6 +1251,8 @@ footer {
         align-items: center;
         width: 100%;
         max-width: 740px;
+        padding-left: 3px;
+        padding-right: 3px;
     }
 
     .pricing__plan--list {
@@ -1235,7 +1264,7 @@ footer {
     .plan__individuals,
     .plan__business,
     .plan__enterprise {
-        width: calc(100% / 2);
+        width: calc(100% / 3);
     }
 
     .testimonials__row {
