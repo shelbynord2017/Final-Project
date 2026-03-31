@@ -233,8 +233,7 @@ header {
 
 .header__description--email {
     position: relative;
-    width: 600px;
-    height: 100px;
+    width: 100%;
 }
 
 .header__email--input {
@@ -341,7 +340,7 @@ header {
     font-weight: 500;
     color: gray;
     padding-bottom: 50px;
-    width: 550px;
+    width: 100%;
     line-height: 1.625;
 }
 
@@ -468,12 +467,11 @@ header {
 }
 
 .steps__img--wrapper {
-    width: 50%;
+    width: 100%;
 }
 
 .steps__img {
     width: 100%;
-    max-width: 700px;
     padding-top: 40px;
 }
 
@@ -550,14 +548,13 @@ header {
 }
 
 .values__img--wrapper {
-    width: 60%;
+    width: 100%;
     display: flex;
     justify-content: flex-end;
 }
 
 .values__img {
     width: 100%;
-    max-width: 600px;
 }
 
 .values__title {
@@ -978,7 +975,7 @@ header {
 
 .testimony__buttons {    
     padding-top: 50px;
-    padding-left: 150px;
+    margin-left: auto;
     height: 100%;
     padding-bottom: 45px;
 }
@@ -986,7 +983,7 @@ header {
 .testimony__btn {
     background-color: #edf2f7;
     padding: 16px 16px;
-    border: solid invisible;
+    border: none;
     border-radius: 50%;
     margin: 0 10px;   
     transition: background-color 300ms ease;
@@ -1172,6 +1169,7 @@ footer {
         margin-right: 5px;
         margin-left: 5px;
         width: 100%;
+        align-items: center;
     }
 
     .header__container {
@@ -1374,10 +1372,11 @@ footer {
     .testimony__buttons {
         justify-content: center;
         align-items: center;
+        margin-left: 0;
     }
 
     .testimony__btn {
-        display: none;
+        padding: 10px 10px;
     }
 
     .get__started--row {
@@ -1393,7 +1392,7 @@ footer {
         justify-content: center;
         align-items: center;
         width: 100%;
-        max-width: 400px;
+        max-width: 80%;
         margin-left: 10px;
         margin-right: 10px;
         text-align: center;
@@ -1423,7 +1422,7 @@ footer {
     }
 
     .footer__text {
-        margin: 0 8px;
+        margin: 0 auto;
         width: 90%;
         justify-content: center;
         align-items: center;
@@ -1431,9 +1430,9 @@ footer {
     }    
 
     .footer__column {
-        padding-right: 25px;
         padding-bottom: 20px;
         text-align: center;
+        min-width: 200px;
     }
 
     .footer__bottom {
@@ -1454,6 +1453,7 @@ footer {
     .header__description--email {
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
     .header__email--input {
@@ -1462,7 +1462,7 @@ footer {
         padding-left: 32px;
         line-height: 1.5;
         width: 100%;
-        max-width: 500px;
+        max-width: 550px;
     }
 
     .header__email--btn {
@@ -1513,12 +1513,12 @@ footer {
         text-align: left;
         margin: 0;
         width: 100%;
-        max-width: 200px;
+        max-width: 100%;
     }
 
     .header__email--input {
         display: flex;
-        width: 500px;
+        width: 100%;
         margin: 4px 0;
         font-size: 14px;
     }
@@ -1597,7 +1597,7 @@ footer {
 
     
     .footer__text {
-        margin: 0 8px;
+        margin: 0 auto;
         width: 90%;
         justify-content: center;
         align-items: center;
