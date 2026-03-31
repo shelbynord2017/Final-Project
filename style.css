@@ -8,7 +8,7 @@
     color: #243e63;
 }
 
-nav {
+.nav__row {
     padding-top: 32px;
     display: flex;
     justify-content: space-between;
@@ -25,7 +25,7 @@ nav {
 .nav__container {
   display: flex;
   padding: 0 20px;
-  width: 80%;
+  width: 100%;
   justify-content: space-between;
   margin: auto;
 }
@@ -67,7 +67,7 @@ li {
 .nav__link {
     font-size: 14px;
     font-weight: 600;
-    padding: 8px;
+    padding: 4px;
     margin: 0 24px;
     text-decoration: none;
     position: relative;
@@ -76,10 +76,6 @@ li {
 
 .nav__link:hover {
     text-decoration: underline 2px solid #6415ff;
-}
-
-.login {
-    margin-left: 48px;
 }
 
 .nav__link--primary {
@@ -239,6 +235,7 @@ header {
     position: relative;
     width: 600px;
     height: 100px;
+    z-index: .1;
 }
 
 .header__email--input {
@@ -1156,12 +1153,25 @@ footer {
 }
 
 
+/* NAV BAR CHANGE */
+
+@media (max-width: 870px) {
+    .nav__links {
+        display: none;
+    } 
+
+    .btn__menu {
+        display: block;
+    }
+}
 
 /* TABLETS, SMALL PHONES */
 
 @media (max-width: 768px) {
     .header__description {
         padding: 0 24px;
+        margin-right: 5px;
+        margin-left: 5px;
         width: 100%;
     }
 
@@ -1174,25 +1184,15 @@ footer {
     }
 
     h2 {
-        font-size: 32px;
+        font-size: 24px;
     }
 
     button {
-        font-size: 18px;
-    }
-
-    .nav__link {
-        font-size: 10px;
-        margin: 0;
-    }
-
-    .nav__links {
-        display: flex
-        
+        font-size: 28px;
     }
 
     .feature {
-        width: calc(100% / 2);
+        width: calc(90% / 2);
         display: flex;
         flex-wrap: wrap;
         padding-left: 3px;
@@ -1200,8 +1200,9 @@ footer {
     }
 
     .feature__row {
-        padding-left: 3px;
-        padding-right: 3px;
+        margin: 10px 10px;
+        width: 100%;
+        max-width: 700px;
     }
 
     .quality__row {
@@ -1209,8 +1210,15 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding-left: 3px;
-        padding-right: 3px;
+        margin: 0 5px;
+    }
+
+    .quality__text {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
     }
 
     .steps__row {
@@ -1222,17 +1230,49 @@ footer {
         padding-right: 3px;
     }
 
+    .steps__description {
+        text-align: center;
+    }
+
+    .steps__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        line-height: 1;
+    }
+
     .values__row {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-align: center;
         padding-left: 3px;
         padding-right: 3px;
     }
 
-    .values__content {
-        margin: 5px 5px;
+    .values__description {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .values__content--list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .values__content--upper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .values__content--icon {
+        max-width: 45px;
     }
 
     .values__btn {
@@ -1242,6 +1282,25 @@ footer {
     .pricing__row {
         padding-left: 3px;
         padding-right: 3px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pricing__description {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .pricing__plans {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 0 20px;
     }
 
     .pricing__description {
@@ -1249,22 +1308,21 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 100%;
-        max-width: 740px;
-        padding-left: 3px;
-        padding-right: 3px;
+        text-align: center;
+        width: 80%;
     }
 
     .pricing__plan--list {
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
+        width: 100%;
+        max-width: 400px;
     }
 
     .plan__individuals,
     .plan__business,
     .plan__enterprise {
-        width: calc(100% / 3);
+        max-width: 500px;
     }
 
     .testimonials__row {
@@ -1278,13 +1336,28 @@ footer {
         display: none;
     }
 
+    .get__started--row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     .get__started--box {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 400px;
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: center;
     }
 
     .get__started--btn {
-        font-size: 18px;
+        font-size: 14px;
+        padding: 
         margin: 8px;
     }
 
@@ -1315,8 +1388,49 @@ footer {
 
     .header__container {
         width: 100%;
+        margin: 0 
+    }
+
+    .header__description {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 90%;
+        max-width: 510px;
+        margin: 0;
+    }
+
+    .header__description--email {
         display: flex;
         flex-direction: column;
+        text-align: left;
+        margin: 0;
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .header__email--input {
+        display: flex;
+        margin: 4px 0;
+        font-size: 14px;
+        padding: 10px; 
+    }
+
+    .header__email--btn {
+        padding: 7px 12px;
+        margin-bottom: 5px;
+    }
+
+
+    .quality__row {
+
+    }
+
+    .pricing__plan--list {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .footer__column {
